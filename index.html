@@ -1,20 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Eliza Blair Skills Showcase Page</title>
-    <link rel="stylesheet" type="text/css" href="\styles.css" charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliza Blair CSS/HTML Showcase</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/styles.css" rel="stylesheet" type="text/css" charset="UTF-8" />
 </head>
-<body>
 
-    <div class="projects" id="button">
-        <form action="http://github.com/eliza-effect">
-            <input type="button" value="My Github Page" alt="My Github Page"/>
-        </form>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <a href="http://github.com/eliza-effect" class="btn btn-info" role="button">My Github Page</a>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                </ul>
+            </div>
+        </div>
     </div>
 
-    <h1>Eliza Blair</h1>
+    <div id="heading">
+        <h1>Eliza Blair</h1>
+    </div>
 
-    <img class="me" src="eliza_with_trebek.jpg" alt="Eliza Blair" />
+    <img class="me hidden-xs img-responsive" src="/Content/eliza_with_trebek.jpg" alt="Eliza Blair" />
 
     <section class="description">
 
@@ -26,18 +41,20 @@
 
         <div class="techelevator">
             <h4>.NET Development Bootcamp</h4>
-            <i><p id="subtitle">Tech Elevator</p>
-            <p id="subtitle">Apr 2017 – August 2017 </p>
-            <p id="subtitle">Cleveland, Ohio</p></i>
+            <i>
+                <p id="subtitle">Tech Elevator</p>
+                <p id="subtitle">Apr 2017 – August 2017 </p>
+                <p id="subtitle">Cleveland, Ohio</p>
+            </i>
             <p>Participating in 14-week .NET coding bootcamp, learning how to develop dynamic web-based software systems using the .NET programming language and platform, including:</p>
             <ul>
                 <li>C# Language Fundamentals: variables, data types, loops, conditional statements, exception handling, collections framework, I/O</li>
                 <li>Object Oriented Programming: classes and objects, interfaces, access modifiers, class modeling, encapsulation, inheritance, and polymorphism, class diagrams</li>
                 <li>Web Application Development: HTML, CSS, Javascript, jQuery, ASP.NET MVC, IIS Express</li>
-                <li>Database Programming: ADO.NET, table design and creation, SQL queries and DML, MS SQL, E/R diagrams</li>
-                <li>Development tools and techniques: Agile, unit testing (MS Test), TDD, Git command line, Visual Studio 2015, Selenium, Cucumber</li>
+                <li>Database Programming: ADO.NET, table design and creation, SQL, E/R diagrams</li>
+                <li>Development tools and techniques: Agile, unit testing (MS Test), TDD, Git command line, Visual Studio 2017</li>
             </ul>
-                </div>
+        </div>
         <br /><br />
         <hr />
         <div class="writing">
@@ -48,7 +65,9 @@
         </div>
     </section>
 
-
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/salvattore.min.js"></script>
 
 
 
